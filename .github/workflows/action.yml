@@ -18,3 +18,6 @@ jobs:
         with:
           # ★★★ Deployするディレクトリ ★★★
           path: 'output'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@main
