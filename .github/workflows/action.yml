@@ -11,8 +11,8 @@ jobs:
           python-version: '3.8'
       - name: build
         run: |
-        pip install plotly-express
-        python make_html.py
+          pip install plotly-express
+          python make_html.py
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
