@@ -3,6 +3,9 @@ run-name: ${{ github.actor }} is learning GitHub Actions
 on: [push]
 jobs:
   make-html:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     permissions:
       contents: 'read'
