@@ -1,4 +1,3 @@
-import plotly
 import plotly.express as px
 
 df = px.data.iris() # iris is a pandas DataFrame
